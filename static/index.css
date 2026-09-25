@@ -1,0 +1,455 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   BODY
+============================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f1f5f9;
+
+    color: #1e293b;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 16px;
+
+    opacity: 0.9;
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+.container {
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 35px auto;
+}
+
+
+/* ==============================
+   CARD
+============================== */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+}
+
+
+/* ==============================
+   FORM
+============================== */
+
+.student-form {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #475569;
+}
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    height: 44px;
+
+    padding: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+.btn {
+    display: inline-block;
+
+    height: 44px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    line-height: 44px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+/* ==============================
+   ADD BUTTON
+============================== */
+
+.add-btn {
+    background: #16a34a;
+
+    color: white;
+}
+
+
+/* ==============================
+   SEARCH
+============================== */
+
+.search-form {
+    display: flex;
+
+    gap: 10px;
+}
+
+.search-form input {
+    flex: 1;
+
+    height: 44px;
+
+    padding: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.search-form input:focus {
+    border-color: #2563eb;
+}
+
+.search-btn {
+    background: #2563eb;
+
+    color: white;
+}
+
+.reset-btn {
+    background: #64748b;
+
+    color: white;
+}
+
+
+/* ==============================
+   UPDATE
+============================== */
+
+.update-btn {
+    background: #f59e0b;
+
+    color: white;
+}
+
+
+/* ==============================
+   TABLE HEADING
+============================== */
+
+.table-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.table-heading h2 {
+    margin: 0;
+}
+
+.count {
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   TABLE
+============================== */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+thead {
+    background: #1e293b;
+
+    color: white;
+}
+
+th {
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 14px;
+}
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.student-name {
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.actions {
+    display: flex;
+
+    gap: 7px;
+}
+
+.edit-btn,
+.delete-btn {
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.edit-btn {
+    background: #f59e0b;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* ==============================
+   NO STUDENT
+============================== */
+
+.no-student {
+
+    text-align: center;
+
+    padding: 45px;
+
+    color: #64748b;
+}
+
+.no-student h3 {
+
+    color: #334155;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+
+    .student-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .student-form {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .table-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
